@@ -170,7 +170,7 @@ export default function GraphAnimation() {
         viewBox={`0 0 ${W} ${H}`}
         width="100%"
         className="overflow-visible"
-        aria-label="Sprint Engine knowledge graph animation"
+        aria-label="Cortex knowledge graph animation"
       >
         {/* Grid dots */}
         <defs>

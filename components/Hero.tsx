@@ -60,7 +60,7 @@ export default function Hero() {
             className="text-lg leading-relaxed max-w-lg"
             style={{ color: "#8c8378" }}
           >
-            Sprint Engine extracts organizational knowledge from your daily work — chat updates,
+            Cortex extracts organizational knowledge from your daily work — chat updates,
             meetings, PRDs, blockers — and builds a living knowledge graph your whole team can query.
             No extra process. No new rituals.
           </motion.p>

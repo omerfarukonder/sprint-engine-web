@@ -9,7 +9,7 @@ const panels = [
     color: "#e07a54",
     label: "Capture",
     title: "Works from what you already do",
-    body: "Chat updates, DOCX sprint plans, PDFs, and meeting recordings. Sprint Engine ingests from the channels your team already uses — no new forms to fill out.",
+    body: "Chat updates, DOCX sprint plans, PDFs, and meeting recordings. Cortex ingests from the channels your team already uses — no new forms to fill out.",
   },
   {
     icon: "⬡",
@@ -60,7 +60,7 @@ export default function Solution() {
             className="text-center text-base max-w-2xl mx-auto mb-14"
             style={{ color: "#8c8378" }}
           >
-            Sprint Engine runs alongside your existing tools. As your team sends chat updates,
+            Cortex runs alongside your existing tools. As your team sends chat updates,
             imports sprint plans, uploads PRDs, and records meetings, it continuously extracts
             and organizes durable knowledge — automatically.
           </motion.p>

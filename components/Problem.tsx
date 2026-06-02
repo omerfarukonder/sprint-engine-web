@@ -99,7 +99,7 @@ export default function Problem() {
           className="text-center text-base max-w-xl mx-auto mb-14"
           style={{ color: "#8c8378" }}
         >
-          The tools you use remember what was built. Sprint Engine remembers why.
+          The tools you use remember what was built. Cortex remembers why.
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-5">

@@ -40,7 +40,7 @@ export default function Nav() {
             S
           </div>
           <span className="font-semibold text-sm tracking-tight" style={{ color: "#f0ece4" }}>
-            Sprint Engine
+            Cortex
           </span>
         </a>
 

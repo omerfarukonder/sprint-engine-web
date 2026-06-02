@@ -159,7 +159,7 @@ export default function AiCompatibility() {
             className="text-center text-base max-w-2xl mx-auto mb-14"
             style={{ color: "#8c8378" }}
           >
-            Sprint Engine exports clean, structured context — paste it straight into any system prompt
+            Cortex exports clean, structured context — paste it straight into any system prompt
             or use our native integrations with the models and tools your team already relies on.
           </motion.p>
         </div>

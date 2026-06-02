@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Sprint Engine — AI-native sprint memory for engineering teams",
+  title: "Cortex — AI-native sprint memory for engineering teams",
   description:
-    "Sprint Engine extracts organizational knowledge from your daily work — chat updates, meetings, PRDs, blockers — and builds a living knowledge graph your whole team can query.",
+    "Cortex extracts organizational knowledge from your daily work — chat updates, meetings, PRDs, blockers — and builds a living knowledge graph your whole team can query.",
   openGraph: {
-    title: "Sprint Engine",
+    title: "Cortex",
     description: "Your team's decisions deserve to be remembered.",
     type: "website",
   },

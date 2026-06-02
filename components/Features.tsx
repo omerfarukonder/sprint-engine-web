@@ -9,7 +9,7 @@ const features = [
     color: "#e07a54",
     title: "Organizational Knowledge Base",
     subtitle: "Every rule, constraint, and capability — extracted from natural conversation.",
-    body: "As your team discusses sprint work, Sprint Engine listens for durable knowledge: team constraints, architectural rules, dependency boundaries, risk signals. It ignores the transient and captures the reusable.",
+    body: "As your team discusses sprint work, Cortex listens for durable knowledge: team constraints, architectural rules, dependency boundaries, risk signals. It ignores the transient and captures the reusable.",
     bullets: [
       "Types: constraints, capabilities, dependencies, risks, process rules",
       "Scopes: team · system · process · project",
@@ -43,7 +43,7 @@ const features = [
     color: "#c89560",
     title: "Entity Relationship Graph",
     subtitle: "A live map of who owns what.",
-    body: "Sprint Engine maintains a canonical entity store — every team, system, domain, person, process, and constraint your work touches. Each entity is extracted, normalized, deduplicated by name similarity, and connected via typed relationships.",
+    body: "Cortex maintains a canonical entity store — every team, system, domain, person, process, and constraint your work touches. Each entity is extracted, normalized, deduplicated by name similarity, and connected via typed relationships.",
     bullets: [
       "7 entity types · 8 relation types",
       'Alias merging: "Payments" and "Payments Team" → same node',
@@ -109,7 +109,7 @@ const features = [
     color: "#c8a87c",
     title: "Task Memory & Digests",
     subtitle: "Every task remembers its full story.",
-    body: "Each task accumulates an append-only event log from the moment it is first mentioned. Sprint Engine condenses that log into a rolling digest — a short LLM narrative of the task's life so far.",
+    body: "Each task accumulates an append-only event log from the moment it is first mentioned. Cortex condenses that log into a rolling digest — a short LLM narrative of the task's life so far.",
     bullets: [
       "Event log: deduped by content hash — no noise from repeated updates",
       "Digest: rebuilt only when new events arrive (cost-efficient)",

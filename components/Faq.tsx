@@ -6,7 +6,7 @@ import { useRef, useState } from "react";
 const faqs = [
   {
     q: "Does it replace Jira or Linear?",
-    a: "No. Sprint Engine is a memory layer, not a project tracker. Import your plan from Jira or Linear, use Sprint Engine to update and query it in natural language. They complement each other.",
+    a: "No. Cortex is a memory layer, not a project tracker. Import your plan from Jira or Linear, use Cortex to update and query it in natural language. They complement each other.",
   },
   {
     q: "What happens to our data?",
@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "How does it handle LLM costs?",
-    a: "Sprint Engine uses your own OpenAI API key — we do not proxy or mark up API costs. For teams without a key, rule-based fallbacks cover core task management. Knowledge extraction requires LLM.",
+    a: "Cortex uses your own OpenAI API key — we do not proxy or mark up API costs. For teams without a key, rule-based fallbacks cover core task management. Knowledge extraction requires LLM.",
   },
   {
     q: "How long does setup take?",
@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Can we import historical sprint data?",
-    a: "Yes. Upload past daily logs or sprint states and Sprint Engine will backfill the task event timeline from day one.",
+    a: "Yes. Upload past daily logs or sprint states and Cortex will backfill the task event timeline from day one.",
   },
   {
     q: "Is the knowledge graph visible to the whole team?",

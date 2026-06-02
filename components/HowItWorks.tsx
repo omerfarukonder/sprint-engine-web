@@ -8,7 +8,7 @@ const steps = [
     number: "01",
     color: "#e07a54",
     title: "Import your plan",
-    body: "Paste your sprint plan or drop a DOCX. Sprint Engine parses the task table, initializes state, and immediately syncs task definitions into the knowledge base. No migration, no data mapping.",
+    body: "Paste your sprint plan or drop a DOCX. Cortex parses the task table, initializes state, and immediately syncs task definitions into the knowledge base. No migration, no data mapping.",
     code: `# DOCX import
 Import → paste path to your sprint plan
 
@@ -19,7 +19,7 @@ workspace/sprint_plan.md`,
     number: "02",
     color: "#c89560",
     title: "Chat your updates",
-    body: 'Update tasks the same way you\'d tell a teammate. "Billing integration is blocked — Stripe needs a new webhook config before we can proceed." Sprint Engine identifies the task, updates its status, extracts the constraint, and logs everything.',
+    body: 'Update tasks the same way you\'d tell a teammate. "Billing integration is blocked — Stripe needs a new webhook config before we can proceed." Cortex identifies the task, updates its status, extracts the constraint, and logs everything.',
     code: `> Billing integration is blocked —
   Stripe needs a new webhook config
 
@@ -72,7 +72,7 @@ export default function HowItWorks() {
             className="text-base max-w-xl mx-auto"
             style={{ color: "#8c8378" }}
           >
-            No migration. No workflow changes. Sprint Engine layers over your existing rhythm.
+            No migration. No workflow changes. Cortex layers over your existing rhythm.
           </motion.p>
         </div>
 

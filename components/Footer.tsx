@@ -65,7 +65,7 @@ export default function Footer() {
         className="px-6 py-6 max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4 text-xs"
         style={{ color: "#534c45", borderTop: "1px solid #131210" }}
       >
-        <span>© 2026 Sprint Engine. All rights reserved.</span>
+        <span>© 2026 Cortex. All rights reserved.</span>
         <div className="flex gap-6">
           {["Product", "Docs", "Pricing", "Privacy", "Terms"].map((l) => (
             <a
