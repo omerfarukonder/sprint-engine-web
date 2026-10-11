@@ -24,14 +24,14 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   title: {
-    default: `${COMPANY_NAME} — AI products and consultancy`,
+    default: `${COMPANY_NAME} — AI products and solutions`,
     template: `%s · ${COMPANY_NAME}`,
   },
   description:
     "We make Cortex, the sprint memory for engineering teams, and help companies build their own AI systems.",
   openGraph: {
     title: COMPANY_NAME,
-    description: "AI products and consultancy for engineering teams.",
+    description: "AI products and solutions for engineering teams.",
     type: "website",
   },
 };

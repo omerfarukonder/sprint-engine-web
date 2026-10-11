@@ -2,7 +2,7 @@
 
 export const COMPANY_NAME = "Reasoning Mechanics";
 export const CONTACT_EMAIL = "hello@reasoningmechanics.com";
-export const BOOK_CALL_HREF = `mailto:${CONTACT_EMAIL}?subject=Consultancy%20enquiry`; // PLACEHOLDER — swap for Calendly / form
+export const CONTACT_HREF = "/contact";
 
 export interface Product {
   slug: string;
@@ -71,4 +71,4 @@ export const services: Service[] = [
   },
 ];
 
-export const serviceHref = (slug: string) => `/consultancy#${slug}`;
+export const serviceHref = (slug: string) => `/solutions#${slug}`;

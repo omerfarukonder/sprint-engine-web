@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Wordmark from "@/components/site/Wordmark";
-import { BOOK_CALL_HREF, products, services, serviceHref } from "@/lib/site";
+import { CONTACT_HREF, products, services, serviceHref } from "@/lib/site";
 
 const menus = [
   {
@@ -14,8 +14,8 @@ const menus = [
     items: products.map((p) => ({ label: p.label, href: p.href, note: p.description })),
   },
   {
-    label: "Consultancy",
-    href: "/consultancy",
+    label: "Solutions",
+    href: "/solutions",
     items: services.map((s) => ({ label: s.label, href: serviceHref(s.slug), note: s.description })),
   },
 ];
@@ -72,13 +72,17 @@ export default function SiteNav() {
               </button>
             );
           })}
-          <a
-            href={BOOK_CALL_HREF}
+          <Link
+            href={CONTACT_HREF}
             onMouseEnter={() => setOpenMenu(null)}
-            className={`${underline} opacity-60 hover:opacity-100 transition-opacity duration-300 after:bg-ink after:scale-x-0 hover:after:scale-x-100`}
+            className={`${underline} transition-opacity duration-300 ${
+              pathname === CONTACT_HREF
+                ? "opacity-100 after:bg-accent after:scale-x-100"
+                : "opacity-60 hover:opacity-100 after:bg-ink after:scale-x-0 hover:after:scale-x-100"
+            }`}
           >
             Contact
-          </a>
+          </Link>
         </nav>
 
         <button
@@ -169,7 +173,7 @@ export default function SiteNav() {
                 ))}
               </div>
             ))}
-            <a href={BOOK_CALL_HREF} className="display text-4xl text-accent">Contact</a>
+            <Link href={CONTACT_HREF} className="display text-4xl text-accent">Contact</Link>
           </motion.div>
         )}
       </AnimatePresence>

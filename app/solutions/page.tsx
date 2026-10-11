@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import Section, { Mono, ArrowLink } from "@/components/site/Section";
 import FaqList from "@/components/site/FaqList";
 import { Dimension } from "@/components/cortex/Blueprint";
-import { BOOK_CALL_HREF, services } from "@/lib/site";
+import { CONTACT_HREF, services } from "@/lib/site";
 import { ACCENT } from "@/lib/theme";
 
 export const metadata: Metadata = {
-  title: "Consultancy",
+  title: "Solutions",
   description:
-    "AI strategy, LLM and agent integration, knowledge systems and engineering process consulting for software teams.",
+    "AI strategy, LLM and agent integration, knowledge systems and engineering process work for software teams.",
 };
 
 const steps = [
@@ -56,13 +56,13 @@ function ProcessFigure() {
   );
 }
 
-export default function ConsultancyPage() {
+export default function SolutionsPage() {
   return (
     <>
       {/* Hero */}
       <section className="px-5 sm:px-10 pt-20 sm:pt-32 pb-16 grid lg:grid-cols-12 gap-x-10 gap-y-10">
         <div className="lg:col-span-3 pt-3">
-          <Mono className="opacity-60">Consultancy</Mono>
+          <Mono className="opacity-60">Solutions</Mono>
         </div>
         <div className="lg:col-span-9">
           <h1 className="display text-[clamp(3.25rem,9vw,9.5rem)]">
@@ -75,7 +75,7 @@ export default function ConsultancyPage() {
             same way we built Cortex.
           </p>
           <div className="mt-10">
-            <ArrowLink href={BOOK_CALL_HREF}>Book a call</ArrowLink>
+            <ArrowLink href={CONTACT_HREF}>Book a call</ArrowLink>
           </div>
         </div>
       </section>

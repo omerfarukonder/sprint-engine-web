@@ -17,7 +17,7 @@ export default function Home() {
       {/* Hero */}
       <section className="px-5 sm:px-10 pt-20 sm:pt-32 pb-16 grid lg:grid-cols-12 gap-x-10 gap-y-10">
         <div className="lg:col-span-3 pt-3">
-          <Mono className="opacity-60">AI products & consultancy</Mono>
+          <Mono className="opacity-60">AI products & solutions</Mono>
         </div>
         <div className="lg:col-span-9">
           <h1 className="display text-[clamp(3.25rem,9vw,9.5rem)]">
@@ -53,8 +53,8 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Consultancy */}
-      <Section n="2.0" label="Consultancy">
+      {/* Solutions */}
+      <Section n="2.0" label="Solutions">
         <h2 className="display text-[clamp(2.5rem,5vw,4.5rem)] max-w-3xl">
           We build it with you<span className="text-accent">.</span>
         </h2>
@@ -68,7 +68,7 @@ export default function Home() {
           ))}
         </div>
         <div className="mt-14">
-          <ArrowLink href="/consultancy">How we work</ArrowLink>
+          <ArrowLink href="/solutions">How we work</ArrowLink>
         </div>
       </Section>
 
