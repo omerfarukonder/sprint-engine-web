@@ -14,6 +14,13 @@
   --color-muted:    #8c8378;
   --color-subtle:   #534c45;
 
+  /* Site shell — bold & minimal */
+  --color-paper:    #f1ece3;
+  --color-paper2:   #e6dfd2;
+  --color-ink:      #14110f;
+  --color-accent:   #c7361e; /* lab red — mirror ACCENT in lib/theme.ts */
+
+  --font-display: var(--font-inter-tight);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -23,30 +30,33 @@ html {
 }
 
 body {
-  background: #000000;
-  color: #f0ece4;
-  font-family: Arial, Helvetica, sans-serif;
+  background: #f1ece3;
+  color: #14110f;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: #000000; }
-::-webkit-scrollbar-thumb { background: #27231e; border-radius: 3px; }
+::-webkit-scrollbar-track { background: #f1ece3; }
+::-webkit-scrollbar-thumb { background: #14110f; }
 
-.gradient-text {
-  background: linear-gradient(135deg, #f0ece4 0%, #e07a54 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+::selection { background: var(--color-accent); color: #f1ece3; }
+
+/* Display type — large but light, sentence case */
+.display {
+  font-family: var(--font-inter-tight), sans-serif;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
 }
 
-.gradient-text-purple {
-  background: linear-gradient(135deg, #f0a882 0%, #e07a54 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+/* Technical drawing animations (Cortex page) */
+@keyframes dash-flow { to { stroke-dashoffset: -24; } }
+.dash-flow { stroke-dasharray: 4 4; animation: dash-flow 1.2s linear infinite; }
 
-strong, b {
-  font-weight: 700;
+@keyframes blink { 50% { opacity: 0; } }
+.caret { animation: blink 1s step-end infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .dash-flow, .caret { animation: none; }
 }

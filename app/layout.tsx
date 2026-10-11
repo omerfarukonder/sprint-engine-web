@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter_Tight } from "next/font/google";
+import SiteNav from "@/components/site/SiteNav";
+import SiteFooter from "@/components/site/SiteFooter";
+import MotionProvider from "@/components/site/MotionProvider";
+import { COMPANY_NAME } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,13 +16,22 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
 export const metadata: Metadata = {
-  title: "Cortex — AI-native sprint memory for engineering teams",
+  title: {
+    default: `${COMPANY_NAME} — AI products and consultancy`,
+    template: `%s · ${COMPANY_NAME}`,
+  },
   description:
-    "Cortex extracts organizational knowledge from your daily work — chat updates, meetings, PRDs, blockers — and builds a living knowledge graph your whole team can query.",
+    "We make Cortex, the sprint memory for engineering teams, and help companies build their own AI systems.",
   openGraph: {
-    title: "Cortex",
-    description: "Your team's decisions deserve to be remembered.",
+    title: COMPANY_NAME,
+    description: "AI products and consultancy for engineering teams.",
     type: "website",
   },
 };
@@ -31,10 +44,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      data-scroll-behavior="smooth"
+      className={`${geistSans.variable} ${geistMono.variable} ${interTight.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col" style={{ background: "#000000", color: "#f0ece4" }}>
-        {children}
+      <body className="min-h-full flex flex-col bg-paper text-ink">
+        <MotionProvider>
+          <SiteNav />
+          <main className="flex-1">{children}</main>
+          <SiteFooter />
+        </MotionProvider>
       </body>
     </html>
   );
