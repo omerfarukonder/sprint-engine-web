@@ -28,7 +28,7 @@ export default function ProductBar({ product }: { product: Product }) {
   const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
-    <div className="sticky top-16 z-40 bg-paper/90 backdrop-blur">
+    <div className="sticky top-16 z-40 bg-paper">
       <div className="px-5 sm:px-10 h-12 flex items-center gap-8">
         <button onClick={toTop} className="flex items-baseline gap-3 shrink-0 group">
           <span className="display text-xl group-hover:text-accent transition-colors duration-300">

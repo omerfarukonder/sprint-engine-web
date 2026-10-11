@@ -46,7 +46,7 @@ export default function SiteNav() {
 
   return (
     <header className="sticky top-0 z-50" onMouseLeave={() => setOpenMenu(null)}>
-      <div className="relative z-10 bg-paper/90 backdrop-blur px-5 sm:px-10 h-16 flex items-center justify-between">
+      <div className="relative z-10 bg-paper px-5 sm:px-10 h-16 flex items-center justify-between">
         <Link href="/" onClick={onLogoClick} className="hover:opacity-70 transition-opacity duration-300">
           <Wordmark className="text-xl" />
         </Link>
@@ -104,7 +104,7 @@ export default function SiteNav() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.25 }}
-              className="hidden md:block fixed inset-0 top-16 bg-paper/50 backdrop-blur-[2px] pointer-events-none"
+              className="hidden md:block fixed inset-0 top-16 bg-paper/60 pointer-events-none"
             />
             <motion.div
               key="panel"
